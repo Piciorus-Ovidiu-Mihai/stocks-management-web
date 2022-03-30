@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .NavbarItems {
   margin: 0;
   position: relative;
@@ -125,9 +132,10 @@
     display: block;
     text-align: center;
     padding: 1.5rem;
-    margin: 2rem auto;
     border-radius: 4px;
     width: 80%;
+    margin-left: auto !important;
+    margin-right: auto !important;
     background: #4ad9e4;
     text-decoration: none;
     color: #ffff;
@@ -140,7 +148,7 @@
     transform: 250ms;
   }
 
-  Button {
-    display: none;
+  .sign-btn {
+    display: none !important;
   }
 }

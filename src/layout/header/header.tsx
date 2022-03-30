@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import { Component } from "react";
 import { MenuItems } from "../../utils/menu-items";
+import { Link } from "react-router-dom";
 import "./header.scss";
 
 class Header extends Component {
@@ -25,15 +26,16 @@ class Header extends Component {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                {/* <Link to={item.url} className={item.cName}>
+                <Link to={item.url} className={item.cName}>
                   {item.title}
-                </Link> */}
-                <a className={item.cName}>{item.title}</a>
+                </Link>
               </li>
             );
           })}
         </ul>
-        <Button variant="contained">Sign Up</Button>
+        <Button className="sign-btn" variant="contained">
+          Sign Up
+        </Button>
       </nav>
     );
   }
