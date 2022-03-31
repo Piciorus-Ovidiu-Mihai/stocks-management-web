@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import LoginIcon from "@mui/icons-material/Login";
 import { Component } from "react";
+import { DONT_HAVE_ACCOUNT, FORGOT_PASSWORD } from "../../utils/constants";
 
 class Login extends Component {
   handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -68,12 +69,12 @@ class Login extends Component {
         <Grid container>
           <Grid item xs>
             <Link href="#" variant="body2">
-              Forgot password?
+              {FORGOT_PASSWORD}
             </Link>
           </Grid>
           <Grid item>
-            <Link href="#" variant="body2">
-              {"Don't have an account? Sign Up"}
+            <Link href="/auth/register" variant="body2">
+              {DONT_HAVE_ACCOUNT}
             </Link>
           </Grid>
         </Grid>

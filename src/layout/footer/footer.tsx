@@ -1,5 +1,5 @@
 import { Link, Typography } from "@mui/material";
-import React, { Component } from "react";
+import { Component } from "react";
 import "./footer.scss";
 
 class Footer extends Component {
@@ -12,7 +12,7 @@ class Footer extends Component {
         className="footer-container"
       >
         {"Copyright © "}
-        <Link color="inherit" href="https://github.com/Piciorus-Ovidiu-Mihai">
+        <Link color="inherit" underline="none" href="https://github.com/Piciorus-Ovidiu-Mihai">
           Stocks Management
         </Link>{" "}
         {new Date().getFullYear()}

@@ -6,15 +6,19 @@ import reportWebVitals from "./reportWebVitals";
 import Layout from "./layout/layout";
 import { APP_NAME } from "./utils/constants";
 import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "@emotion/react";
+import theme from "./utils/theme";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <title>{APP_NAME}</title>
-      <Layout>
-        <App />
-      </Layout>
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <title>{APP_NAME}</title>
+        <Layout>
+          <App />
+        </Layout>
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

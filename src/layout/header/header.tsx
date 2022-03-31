@@ -33,7 +33,7 @@ class Header extends Component {
             );
           })}
         </ul>
-        <Button className="sign-btn" variant="contained">
+        <Button color="secondary" className="sign-btn" variant="contained" href="/auth/login">
           Sign Up
         </Button>
       </nav>

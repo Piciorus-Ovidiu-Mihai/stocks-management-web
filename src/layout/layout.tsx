@@ -1,5 +1,4 @@
-import { Grid } from "@mui/material";
-import React, { Component } from "react";
+import { Component } from "react";
 import Footer from "./footer/footer";
 import Header from "./header/header";
 import "./layout.scss";

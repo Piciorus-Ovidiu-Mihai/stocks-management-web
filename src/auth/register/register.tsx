@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
 import { Component } from "react";
+import { HAVE_ACCOUNT } from "../../utils/constants";
 
 class Register extends Component {
   render() {
@@ -58,8 +59,8 @@ class Register extends Component {
         </Button>
         <Grid container>
           <Grid item>
-            <Link href="#" variant="body2">
-              {"Do you have an account? Sign In"}
+            <Link href="/auth/login" variant="body2">
+              {HAVE_ACCOUNT}
             </Link>
           </Grid>
         </Grid>
