@@ -8,9 +8,10 @@ function App() {
   return (
     <>
       <Routes>
+        <Route path='*' element={<HomeContainer/>}/>
         <Route path="/auth/login" element={<Login />} />
         <Route path="/auth/register" element={<Register />} />
-        <Route path="/app/home" element={<HomeContainer />} />
+        <Route path="/app" element={<HomeContainer />}/>
       </Routes>
     </>
   );
