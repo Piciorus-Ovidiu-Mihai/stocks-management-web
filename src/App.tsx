@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import "./App.scss";
 import Login from "./auth/login/login";
 import Register from "./auth/register/register";
@@ -12,6 +12,8 @@ function App() {
         <Route path="/auth/login" element={<Login />} />
         <Route path="/auth/register" element={<Register />} />
         <Route path="/app" element={<HomeContainer />}/>
+        <Route path="/" element={<Navigate to="/app" replace />}>
+        </Route>
       </Routes>
     </>
   );
