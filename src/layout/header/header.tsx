@@ -15,7 +15,7 @@ class Header extends Component {
     return (
       <nav className="NavbarItems">
         <h1 className="navbar-logo">
-          React<i className="fab fa-react"></i>
+          <i className="fa-solid fa-shop"></i>
         </h1>
         <div className="menu-icon" onClick={this.handleClick}>
           <i
@@ -33,7 +33,12 @@ class Header extends Component {
             );
           })}
         </ul>
-        <Button color="secondary" className="sign-btn" variant="contained" href="/auth/login">
+        <Button
+          color="secondary"
+          className="sign-btn"
+          variant="contained"
+          href="/auth/login"
+        >
           Sign Up
         </Button>
       </nav>
