@@ -15,6 +15,8 @@ class StoreContainer extends Component {
         <MaterialTable
           headers={TABLE_COLUMNS}
           data={this.products}
+          direction="asc"
+          orderBy="Name"
         ></MaterialTable>
       </div>
     );
