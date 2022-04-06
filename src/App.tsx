@@ -3,7 +3,7 @@ import "./App.scss";
 import Login from "./auth/login/login";
 import Register from "./auth/register/register";
 import HomeContainer from "./pages/home/home-container";
-import StatisticContainer from "./pages/statistics/statistics";
+import StatisticContainer from "./pages/statistics/statistics-container";
 import StoreContainer from "./pages/store/store-container";
 
 function App() {
