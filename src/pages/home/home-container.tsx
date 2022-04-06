@@ -6,6 +6,7 @@ import "./home-container.scss";
 
 class HomeContainer extends Component {
   list: any = [];
+
   render() {
     return (
       <>
