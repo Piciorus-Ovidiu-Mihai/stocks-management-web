@@ -4,7 +4,11 @@ import "./statistics-container.scss";
 
 class StatisticContainer extends Component {
   render() {
-    return <Chart />;
+    return (
+      <>
+        <Chart />)
+      </>
+    );
   }
 }
 
