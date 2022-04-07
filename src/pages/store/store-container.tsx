@@ -26,7 +26,6 @@ class StoreContainer extends Component {
     new Product(912, "name", "test1", "ts", 2),
     new Product(101, "name", "test1", "ts", 2),
     new Product(111, "name", "test1", "ts", 2),
-    new Product(1211, "name", "test1", "ts", 2),
   ];
   render() {
     return (
