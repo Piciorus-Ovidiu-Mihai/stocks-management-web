@@ -1,7 +1,7 @@
 import { Component } from "react";
 import MaterialTable from "../../components/table/table";
-import { Product } from "../../models/Product";
-import { TABLE_COLUMNS } from "../../utils/constants";
+import { TABLE_COLUMNS } from "../../libs/constants/constants";
+import { Product } from "../../libs/models/Product";
 import "./store-container.scss";
 class StoreContainer extends Component {
   products: Product[] = [

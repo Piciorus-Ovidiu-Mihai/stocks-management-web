@@ -4,10 +4,10 @@ import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Layout from "./layout/layout";
-import { APP_NAME } from "./utils/constants";
+import { APP_NAME } from "./libs/constants/constants";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@emotion/react";
-import theme from "./utils/theme";
+import theme from "./libs/styles/theme";
 
 ReactDOM.render(
   <React.StrictMode>

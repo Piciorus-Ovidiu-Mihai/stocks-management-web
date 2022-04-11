@@ -9,9 +9,17 @@ import {
 } from "@mui/material";
 import LoginIcon from "@mui/icons-material/Login";
 import { Component } from "react";
-import { DONT_HAVE_ACCOUNT, FORGOT_PASSWORD } from "../../utils/constants";
+import { DONT_HAVE_ACCOUNT, FORGOT_PASSWORD } from "../../libs/constants/constants";
+import axios from "axios";
 
 class Login extends Component {
+
+  componentDidMount() {
+    axios.get('https://localhost:7235/api/Product/GetAllProducts').then(res => {
+      console.log(res.data);
+    });
+  }
+
   handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -20,9 +28,6 @@ class Login extends Component {
       password: data.get("password"),
     });
   };
-
-
-  
 
   render() {
     return (

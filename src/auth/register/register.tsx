@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
 import { Component } from "react";
-import { HAVE_ACCOUNT } from "../../utils/constants";
+import { HAVE_ACCOUNT } from "../../libs/constants/constants";
 
 class Register extends Component {
   render() {

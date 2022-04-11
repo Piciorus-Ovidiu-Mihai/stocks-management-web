@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import { Component } from "react";
-import { MenuItems } from "../../utils/menu-items";
 import { Link } from "react-router-dom";
+import { MenuItems } from "../../libs/constants/menu-items";
 import "./header.scss";
 
 class Header extends Component {
